@@ -63,7 +63,6 @@
 
 .environment-shadow {
     border-radius: 100%;
-
 }
 
 .environment-shadow.top {
