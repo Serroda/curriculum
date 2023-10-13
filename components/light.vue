@@ -13,6 +13,7 @@
     0% {
         opacity: 0.2;
     }
+
     100% {
         opacity: 1;
     }
@@ -20,12 +21,12 @@
 
 .light-container {
     display: flex;
-    margin-top: 40px;
+    padding-top: 40px;
     min-width: 400px;
-    height: 60%;
+    height: 700px;
     justify-content: center;
     position: relative;
-    animation: fade .8s ease-out;
+    animation: fade 1.2s ease-out;
 }
 
 .spotlight {
@@ -54,7 +55,7 @@
 
 .blur-container {
     bottom: -60px;
-    width: 101%;
+    width: 115%;
     height: 200px;
     background: var(--dark-blue-3);
     filter: blur(25px);
@@ -62,7 +63,7 @@
 
 .environment-shadow {
     border-radius: 100%;
-   
+
 }
 
 .environment-shadow.top {
