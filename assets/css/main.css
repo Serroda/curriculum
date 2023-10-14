@@ -50,6 +50,9 @@
   --dark-blue-3: rgba(4, 26, 47, 1);
   --dark-blue-4: rgba(2, 13, 24, 1);
 
+  --green-1: rgba(58, 222, 104, 1);
+  --violet-1: rgba(184, 50, 231, 1);
+
   font-family: InterLight;
 }
 
@@ -70,11 +73,27 @@ body {
   width: 100%;
 }
 
-label {
-  font-family: InterBold;
-  color: var(--blue-1);
-  padding: 2px 9px;
-  width: fit-content;
+h2{
+  font-family: InterMedium;
+  color: var(--blue-1)
+}
+
+p {
+  font-family: InterLight;
+  color:var(--gray-2);
+  line-height: 22px; 
+}
+
+span{
+  font-family: InterMedium;
+}
+
+span.green{
+  color: var(--green-1);
+}
+
+span.violet{
+  color: var(--violet-1);
 }
 
 .main-title-container {
@@ -94,8 +113,14 @@ label {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
   font-family: InterSemiBold;
+}
+
+label {
+  font-family: InterBold;
+  color: var(--blue-1);
+  padding: 2px 9px;
+  width: fit-content;
 }
 
 .main-title-container label {
