@@ -81,7 +81,7 @@ body {
   width: 100%;
 }
 
-h2 {
+h2,h3 {
   font-family: InterMedium;
   color: var(--blue-1);
 }
@@ -90,6 +90,10 @@ p {
   font-family: InterLight;
   color: var(--gray-2);
   line-height: 22px;
+}
+
+p.blue-1{
+  color: var(--blue-1);
 }
 
 span {
@@ -111,6 +115,12 @@ span.orange {
 
 span.red {
   color: var(--red-1);
+}
+
+ul {
+  color: var(--gray-2);
+  padding-left: 16px;
+  margin: 0;
 }
 
 .main-title-container {
@@ -154,6 +164,17 @@ label {
   );
 }
 
+.background-radial::after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  filter: blur(150px); 
+  background: var(--blue-5);
+  width: 140%;
+  height: 120%;
+  border-radius: 100%;
+}
+
 .fade-animation{
   opacity: 0;
 }
@@ -169,4 +190,22 @@ label {
 
 .draw-animation.visible .circuit-path{
   animation: draw 6s forwards;
+}
+
+.card{
+  border-radius: 15px;
+  border: 3px solid var(--blue-5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px;
+  gap:16px;
+  max-width: 400px;
+}
+
+.card.left{
+  background: linear-gradient(254deg, var(--dark-blue-1) 2.77%, transparent 117.34%); 
+}
+.card.right{
+  background: linear-gradient(254deg, transparent 2.77%, var(--dark-blue-1)  117.34%); 
 }

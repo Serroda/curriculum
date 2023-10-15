@@ -10,7 +10,7 @@
     </div>
 
     <div class="flex justify-center mt-100px max-w-1000px gap-82px observing fade-animation">
-      <img src="./assets/images/me.png" width="500">
+      <img src="./images/me.png" width="500">
       <div class="flex flex-col justify-center">
         <h2 class="mb-0px">Me presento</h2>
         <p class="mt-16px">Desarrollador de aplicaciones web con 5 años
@@ -112,15 +112,51 @@
       </svg>
     </div>
 
-    <div class="mt-200px flex justify-center flex-col items-center text-center max-w-600px observing fade-animation">
+    <div
+      class="relative background-radial mt-200px flex justify-center flex-col items-center text-center max-w-600px observing fade-animation">
+
       <h2 class="mb-0px">Tecnologías con las que trabajo</h2>
       <p class="mt-16px mb-80px">Experencia con tecnologías <span class="green">flexibles</span>, <span
           class="violet">rápidas</span>, <span class="orange">robustas</span> y
         con <span class="red">potencial</span> para crear aplicaciones web completas y dinámicas</p>
       <div class="flex justify-center flex-wrap gap-50px ">
-        <SmallCard v-for="tech in technologies" :key="tech.name" :name="tech.name" :image="tech.image" />
+        <SmallCard v-for="tech in technologies" :key="tech.name" v-bind="tech" />
       </div>
     </div>
+
+    <div class="flex flex-col mt-200px observing fade-animation">
+      <h2 class="mb-20px">Estudios y experiencia laboral</h2>
+
+      <div class="flex gap-16px">
+        <div class="flex flex-col gap-16px">
+          <div class="card left">
+            <img width="90" src="./images/ucam.svg">
+            <p class="blue-1">Formación profesional superior de desarrollo de aplicaciones web</p>
+          </div>
+          <div class="card left">
+            <img width="90" src="./images/decoration.svg">
+            <p class="blue-1">Cursos de diseño de interfaces y patrones de diseño</p>
+          </div>
+        </div>
+        <div class="card right items-initial">
+          <img width="90" height="90" src="./images/work.svg">
+          <div class="flex flex-col">
+            <h3 class="mb-0px">Comanet</h3>
+            <p class="blue-1 mt-0px">Desarrollador full-stack developer</p>
+            <ul>
+              <li>Diseño de interfaces de usuario</li>
+              <li>Lógica de negocio</li>
+              <li>Gestión de bases de datos</li>
+              <li>Desarrollo de aplicaciones web</li>
+              <li>Desarrollo de aplicaciones para iOS y Android</li>
+            </ul>
+   
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-200px"></div>
 
   </div>
 </template>
@@ -192,7 +228,4 @@ const intersectionObserver = useIntersectionObserver();
 onMounted(() => {
   intersectionObserver.setObserver("observing")
 })
-
-
-
 </script>
