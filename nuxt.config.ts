@@ -4,5 +4,10 @@ export default defineNuxtConfig({
   modules: ["@unocss/nuxt"],
   css: [
     "assets/css/main.css"
-  ]
+  ],
+  runtimeConfig:{
+    public:{
+      'intersectionObserverThreshold': process.env.INTERSECTION_OBSERVER_THRESHOLD
+    }
+  }
 })

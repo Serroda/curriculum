@@ -17,11 +17,17 @@
 
 @keyframes fade {
   0% {
-      opacity: 0.2;
+    opacity: 0;
   }
 
   100% {
-      opacity: 1;
+    opacity: 1;
+  }
+}
+
+@keyframes draw {
+  to{
+    stroke-dashoffset: 0;
   }
 }
 
@@ -52,6 +58,8 @@
 
   --green-1: rgba(58, 222, 104, 1);
   --violet-1: rgba(184, 50, 231, 1);
+  --orange-1: rgba(222, 137, 58, 1);
+  --red-1: rgba(210, 64, 111, 1);
 
   font-family: InterLight;
 }
@@ -73,27 +81,36 @@ body {
   width: 100%;
 }
 
-h2{
+h2 {
   font-family: InterMedium;
-  color: var(--blue-1)
+  color: var(--blue-1);
 }
 
 p {
   font-family: InterLight;
-  color:var(--gray-2);
-  line-height: 22px; 
+  color: var(--gray-2);
+  line-height: 22px;
 }
 
-span{
+span {
   font-family: InterMedium;
+  color: var(--blue-1);
 }
 
-span.green{
+span.green {
   color: var(--green-1);
 }
 
-span.violet{
+span.violet {
   color: var(--violet-1);
+}
+
+span.orange {
+  color: var(--orange-1);
+}
+
+span.red {
+  color: var(--red-1);
 }
 
 .main-title-container {
@@ -109,7 +126,11 @@ span.violet{
 
 .main-title-container h1 {
   font-size: 48px;
-  background: linear-gradient(180deg, var(--blue-1) 24.14%, var(--gray-3) 87.93%);
+  background: linear-gradient(
+    180deg,
+    var(--blue-1) 24.14%,
+    var(--gray-3) 87.93%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -131,4 +152,21 @@ label {
     rgba(231, 243, 253, 0.2) 2.64%,
     rgba(217, 217, 217, 0) 100%
   );
+}
+
+.fade-animation{
+  opacity: 0;
+}
+
+.fade-animation.visible{
+  animation: fade 2s forwards;
+}
+
+.draw-animation .circuit-path{
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+.draw-animation.visible .circuit-path{
+  animation: draw 6s forwards;
 }

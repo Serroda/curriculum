@@ -26,7 +26,7 @@
     height: 700px;
     justify-content: center;
     position: relative;
-    animation: fade 1.2s ease-out;
+    animation: fade 2s ease-out;
 }
 
 .spotlight {
