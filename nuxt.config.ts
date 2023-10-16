@@ -9,5 +9,8 @@ export default defineNuxtConfig({
     public:{
       'intersectionObserverThreshold': process.env.INTERSECTION_OBSERVER_THRESHOLD
     }
+  },
+  app:{
+    baseURL:"/Portfolio/"
   }
 })
