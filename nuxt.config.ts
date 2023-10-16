@@ -5,12 +5,13 @@ export default defineNuxtConfig({
   css: [
     "assets/css/main.css"
   ],
-  runtimeConfig:{
-    public:{
+  runtimeConfig: {
+    public: {
       'intersectionObserverThreshold': process.env.INTERSECTION_OBSERVER_THRESHOLD
     }
   },
-  app:{
-    baseURL:"/Portfolio/"
-  }
+  app: {
+    baseURL: "/Portfolio/",
+    buildAssetsDir: "/Portfolio/"
+  },
 })
