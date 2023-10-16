@@ -38,7 +38,7 @@ function openLink(link: string) {
     background: var(--dark-blue-2);
     border: 2px solid var(--blue-4);
     border-radius: 10px;
-    transition: transform .2s, background .2s;
+    transition: transform .2s;
 }
 
 .container-small-card:hover .small-card{

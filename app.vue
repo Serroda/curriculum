@@ -130,6 +130,7 @@
       <div class="flex gap-16px">
         <div class="flex flex-col gap-16px">
           <div class="card left">
+            <label>2016-2018</label>
             <img width="90" src="./images/ucam.svg">
             <p class="blue-1">Formación profesional superior de desarrollo de aplicaciones web</p>
           </div>
@@ -139,6 +140,7 @@
           </div>
         </div>
         <div class="card right items-initial">
+          <label>2018</label>
           <img width="90" height="90" src="./images/work.svg">
           <div class="flex flex-col">
             <h3 class="mb-0px">Comanet</h3>
@@ -150,18 +152,35 @@
               <li>Desarrollo de aplicaciones web</li>
               <li>Desarrollo de aplicaciones para iOS y Android</li>
             </ul>
-   
+
           </div>
         </div>
       </div>
     </div>
 
-    <div class="mt-200px"></div>
+    <footer class="mt-200px flex justify-center align-items flex-col observing fade-animation relative">
+      <h2 class="mb-30px">Conecta conmigo</h2>
+      <div class="flex justify-center gap-32px">
+        <div class="contact-link left" @click="openLink(linkAddress.linkedin)">
+          <img src="./images/in.svg">
+        </div>
+        <div class="contact-link right" @click="openLink(linkAddress.x)">
+          <img src="./images/x.svg">
+        </div>
+      </div>
+
+    </footer>
 
   </div>
 </template>
 
 <script lang="ts" setup>
+
+enum linkAddress {
+  x = 'https://twitter.com/JesusCarceles',
+  linkedin = 'https://es.linkedin.com/in/jes%C3%BAs-c%C3%A1rceles-119108234'
+}
+
 const technologies = [{
   name: "Vue",
   image: "vue.svg",
@@ -222,6 +241,10 @@ const technologies = [{
   image: "typescript.svg",
   link: "https://www.typescriptlang.org/"
 }]
+
+function openLink(link: linkAddress) {
+  window.open(link, "_blank")
+}
 
 const intersectionObserver = useIntersectionObserver();
 
