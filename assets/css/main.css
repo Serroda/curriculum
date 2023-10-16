@@ -15,6 +15,32 @@
   src: url("../fonts/Inter-SemiBold.ttf");
 }
 
+@media only screen and (max-width: 917px) {
+  .circuit {
+    transform: scale(0.54);
+  }
+
+  #__nuxt .dynamic-gap {
+    gap: 20px;
+  }
+
+  .text-center-md {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .circuit {
+    transform: scale(0.4);
+  }
+  .me-img {
+    transform: scale(0.74);
+  }
+  .padding-mobile {
+    padding: 0 40px;
+  }
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
@@ -79,6 +105,7 @@ body {
 #__nuxt {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 h2,
@@ -180,8 +207,7 @@ footer::after {
 footer::after {
   left: -20%;
   bottom: -60%;
-  filter: blur(70px);
-  width: 140%;
+  filter: blur(100px);
   height: 200%;
 }
 
@@ -260,3 +286,6 @@ footer::after {
   transform: scale(1.15);
 }
 
+.dynamic-gap {
+  gap: 82px;
+}

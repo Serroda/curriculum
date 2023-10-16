@@ -9,9 +9,9 @@
       <Light />
     </div>
 
-    <div class="flex justify-center mt-100px max-w-1000px gap-82px observing fade-animation">
-      <img src="./images/me.png" width="500">
-      <div class="flex flex-col justify-center">
+    <div class="flex justify-center mt-100px dynamic-gap observing fade-animation flex-wrap w-100%">
+      <img class="me-img" src="./images/me.png" width="500">
+      <div class="flex flex-col justify-center max-w-500px padding-mobile">
         <h2 class="mb-0px">Me presento</h2>
         <p class="mt-16px">Desarrollador de aplicaciones web con 5 años
           de experiencia, me encanta ambos mundos
@@ -19,8 +19,8 @@
       </div>
     </div>
 
-    <div class="mt-140px observing fade-animation draw-animation">
-      <svg width="922" height="251" viewBox="0 0 922 251" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="mt-120px observing fade-animation draw-animation">
+      <svg class="circuit" width="922" height="251"  fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="105.5" cy="64.5" r="50" fill="url(#paint0_linear_138_3)" />
         <circle cx="228.5" cy="64.5" r="50" fill="url(#paint1_linear_138_3)" />
         <circle cx="351.5" cy="64.5" r="50" fill="url(#paint2_linear_138_3)" />
@@ -113,10 +113,10 @@
     </div>
 
     <div
-      class="relative background-radial mt-200px flex justify-center flex-col items-center text-center max-w-600px observing fade-animation">
+      class="relative background-radial mt-180px flex justify-center flex-col items-center text-center max-w-600px w-100% observing fade-animation">
 
-      <h2 class="mb-0px">Tecnologías con las que trabajo</h2>
-      <p class="mt-16px mb-80px">Experencia con tecnologías <span class="green">flexibles</span>, <span
+      <h2 class="mb-0px padding-mobile">Tecnologías con las que trabajo</h2>
+      <p class="mt-16px mb-80px padding-mobile">Experencia con tecnologías <span class="green">flexibles</span>, <span
           class="violet">rápidas</span>, <span class="orange">robustas</span> y
         con <span class="red">potencial</span> para crear aplicaciones web completas y dinámicas</p>
       <div class="flex justify-center flex-wrap gap-50px ">
@@ -124,11 +124,12 @@
       </div>
     </div>
 
-    <div class="flex flex-col mt-200px observing fade-animation">
-      <h2 class="mb-20px">Estudios y experiencia laboral</h2>
+    <div class="flex flex-col mt-200px observing fade-animation padding-mobile">
+      
+      <h2 class="mb-30px text-center-md">Estudios y experiencia laboral</h2>
 
-      <div class="flex gap-16px">
-        <div class="flex flex-col gap-16px">
+      <div class="flex gap-16px flex-wrap justify-center ">
+        <div class="flex flex-col gap-16px ">
           <div class="card left">
             <label>2016-2018</label>
             <img width="90" src="./images/ucam.svg">
@@ -156,6 +157,7 @@
           </div>
         </div>
       </div>
+
     </div>
 
     <footer class="mt-200px flex justify-center align-items flex-col observing fade-animation relative">
