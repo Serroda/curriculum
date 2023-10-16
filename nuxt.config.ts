@@ -12,6 +12,7 @@ export default defineNuxtConfig({
   },
   app: {
     baseURL: "/Portfolio/",
-    buildAssetsDir: "/Portfolio/_nuxt/"
+    buildAssetsDir: "/Portfolio/",
+    cdnURL:"/Portfolio/"
   },
 })
