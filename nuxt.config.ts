@@ -11,13 +11,6 @@ export default defineNuxtConfig({
     }
   },
   app: {
-    baseURL: "/Portfolio/",
-    buildAssetsDir: "/Portfolio/",
-  },
-  vite: {
-    build: {
-      assetsDir: "Portfolio/"
-    }
+    baseURL: "/Portfolio/"
   }
-
 })
