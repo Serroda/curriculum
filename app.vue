@@ -10,7 +10,7 @@
     </div>
 
     <div class="flex justify-center mt-100px dynamic-gap observing fade-animation flex-wrap w-100%">
-      <img class="me-img" src="./images/me.png" width="500">
+      <img class="me-img" src="./assets/images/me.png" width="500">
       <div class="flex flex-col justify-center max-w-500px padding-mobile">
         <h2 class="mb-0px">Me presento</h2>
         <p class="mt-16px">Desarrollador de aplicaciones web con 5 años
@@ -132,17 +132,17 @@
         <div class="flex flex-col gap-16px ">
           <div class="card left">
             <label>2016-2018</label>
-            <img width="90" src="./images/ucam.svg">
+            <img width="90" src="./assets/images/ucam.svg">
             <p class="blue-1">Formación profesional superior de desarrollo de aplicaciones web</p>
           </div>
           <div class="card left">
-            <img width="90" src="./images/decoration.svg">
+            <img width="90" src="./assets/images/decoration.svg">
             <p class="blue-1">Cursos de diseño de interfaces y patrones de diseño</p>
           </div>
         </div>
         <div class="card right items-initial">
           <label>2018</label>
-          <img width="90" height="90" src="./images/work.svg">
+          <img width="90" height="90" src="./assets/images/work.svg">
           <div class="flex flex-col">
             <h3 class="mb-0px">Comanet</h3>
             <p class="blue-1 mt-0px">Desarrollador full-stack developer</p>
@@ -164,10 +164,10 @@
       <h2 class="mb-30px">Conecta conmigo</h2>
       <div class="flex justify-center gap-32px">
         <div class="contact-link left" @click="openLink(linkAddress.linkedin)">
-          <img src="./images/in.svg">
+          <img src="./assets/images/in.svg">
         </div>
         <div class="contact-link right" @click="openLink(linkAddress.x)">
-          <img src="./images/x.svg">
+          <img src="./assets/images/x.svg">
         </div>
       </div>
 
