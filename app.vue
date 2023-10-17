@@ -10,7 +10,7 @@
     </div>
 
     <div class="flex justify-center mt-100px dynamic-gap observing fade-animation flex-wrap w-100%">
-      <img class="me-img" src="./assets/images/me.png" width="500">
+      <img class="me-img" src="./assets/images/me.webp" width="500">
       <div class="flex flex-col justify-center max-w-500px padding-mobile">
         <h2 class="mb-0px">Me presento</h2>
         <p class="mt-16px">Desarrollador de aplicaciones web con 5 años
@@ -132,17 +132,17 @@
         <div class="flex flex-col gap-16px ">
           <div class="card left">
             <label>2016-2018</label>
-            <img width="90" src="./assets/images/ucam.svg">
+            <img width="90" src="./assets/images/ucam.webp">
             <p class="blue-1">Formación profesional superior de desarrollo de aplicaciones web</p>
           </div>
           <div class="card left">
-            <img width="90" src="./assets/images/decoration.svg">
+            <img width="90" src="./assets/images/decoration.webp">
             <p class="blue-1">Cursos de diseño de interfaces y patrones de diseño</p>
           </div>
         </div>
         <div class="card right items-initial">
           <label>2018</label>
-          <img width="90" height="90" src="./assets/images/work.svg">
+          <img width="90" height="90" src="./assets/images/work.webp">
           <div class="flex flex-col">
             <h3 class="mb-0px">Comanet</h3>
             <p class="blue-1 mt-0px">Desarrollador full-stack developer</p>
@@ -164,10 +164,10 @@
       <h2 class="mb-30px">Conecta conmigo</h2>
       <div class="flex justify-center gap-32px">
         <div class="contact-link left" @click="openLink(linkAddress.linkedin)">
-          <img src="./assets/images/in.svg">
+          <img src="./assets/images/in.webp" width="38">
         </div>
         <div class="contact-link right" @click="openLink(linkAddress.x)">
-          <img src="./assets/images/x.svg">
+          <img src="./assets/images/x.webp" width="30">
         </div>
       </div>
 
@@ -185,62 +185,62 @@ enum linkAddress {
 
 const technologies = [{
   name: "Vue",
-  image: "vue.svg",
+  image: "vue.webp",
   link: "https://vuejs.org/"
 },
 {
   name: "Vite",
-  image: "vite.svg",
+  image: "vite.webp",
   link: "https://vitejs.dev/"
 },
 {
   name: "Nuxt",
-  image: "nuxt.svg",
+  image: "nuxt.webp",
   link: "https://nuxt.com/"
 },
 {
   name: "JavaScript",
-  image: "javascript.svg",
+  image: "javascript.webp",
   link: "https://developer.mozilla.org/es/docs/Web/JavaScript"
 },
 {
   name: "CSS",
-  image: "css.svg",
+  image: "css.webp",
   link: "https://developer.mozilla.org/es/docs/Web/CSS"
 },
 {
   name: "Figma",
-  image: "figma.svg",
+  image: "figma.webp",
   link: "https://www.figma.com/"
 },
 {
   name: "C#",
-  image: "c++++.svg",
+  image: "csharp.webp",
   link: "https://learn.microsoft.com/es-es/dotnet/csharp/"
 },
 {
   name: "SQL",
-  image: "sql.svg",
+  image: "sql.webp",
   link: "https://es.wikipedia.org/wiki/SQL"
 },
 {
   name: "Capacitor",
-  image: "capacitor.svg",
+  image: "capacitor.webp",
   link: "https://capacitorjs.com/"
 },
 {
   name: "Entity Framework",
-  image: "entity-framework.svg",
+  image: "entity-framework.webp",
   link: "https://learn.microsoft.com/en-us/ef/"
 },
 {
   name: ".NET",
-  image: "net.svg",
+  image: "net.webp",
   link: "https://dotnet.microsoft.com/es-es/learn/dotnet/what-is-dotnet"
 },
 {
   name: "TypeScript",
-  image: "typescript.svg",
+  image: "typescript.webp",
   link: "https://www.typescriptlang.org/"
 }]
 

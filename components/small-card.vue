@@ -1,7 +1,7 @@
 <template>
     <div class="container-small-card" @click="openLink(link)">
         <div class="small-card">
-            <img :src="'./images/' + image">
+            <img :src="'./images/' + image" height="25">
         </div>
         <span class="text-small-card mt-12px">{{ name }}</span>
     </div>
