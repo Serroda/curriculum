@@ -1,5 +1,15 @@
 <template>
   <div class="h-100% w-100% flex flex-col items-center">
+    <div class="flex">
+      <div>
+        <h2>CURRICULUM VITAE</h2>
+        <h1>JESÚS CÁRCELES CLEMENTE</h1>
+        <p>Full-stack developer</p>
+        <h2 class="dark-color mb-5px">01010110 01110101 01100101</h2>
+        <h2 class="dark-color mt-5px">00101110 01001110 01000101 01010100</h2>
+      </div>
+      <div></div>
+    </div>
 
   </div>
 </template>
