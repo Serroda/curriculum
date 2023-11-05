@@ -69,23 +69,65 @@ body {
   animation: fade 2s forwards;
 }
 
-h1{
-  color:hsl(var(--color-1));
+h1 {
+  color: hsl(var(--color-1));
   font-size: 3rem;
   margin: 20px 0;
 }
-h2{
-  color:hsl(var(--color-3));
+h2 {
+  color: hsl(var(--color-3));
   font-size: 2.25rem;
   margin: 20px 0;
 }
 
-p{
-  color:hsl(var(--color-4));
+p {
+  color: hsl(var(--color-4));
   font-size: 1.25rem;
   margin: 20px 0;
+  font-family: SourceSansPro;
 }
 
-.dark-color{
-  color:hsl(var(--color-8));
+.dark-color {
+  color: hsl(var(--color-8));
+}
+
+.box {
+  border: 2px solid hsl(var(--color-8));
+  padding: 50px;
+  position: relative;
+}
+
+.corner {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 5px solid hsl(var(--color-2));
+}
+
+.corner.p1 {
+  right: -3px;
+  top: -3px;
+  border-bottom: transparent;
+  border-left: transparent;
+}
+
+.corner.p2 {
+  left: -3px;
+  bottom: -3px;
+  border-top: transparent;
+  border-right: transparent;
+}
+
+.corner.p3 {
+  left: -3px;
+  top: -3px;
+  border-bottom: transparent;
+  border-right: transparent;
+}
+
+.corner.p4 {
+  right: -3px;
+  bottom: -3px;
+  border-top: transparent;
+  border-left: transparent;
 }

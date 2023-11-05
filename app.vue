@@ -8,7 +8,9 @@
         <h2 class="dark-color mb-5px">01010110 01110101 01100101</h2>
         <h2 class="dark-color mt-5px">00101110 01001110 01000101 01010100</h2>
       </div>
-      <div></div>
+      <div>
+        <ProfilePicture />
+      </div>
     </div>
 
   </div>
