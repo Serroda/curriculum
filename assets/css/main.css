@@ -91,7 +91,7 @@ p {
 }
 
 label{
-  color: hsl(var(--color-3));
+  color: hsl(var(--color-2));
   font-size: 1rem;
 }
 .dark-color {

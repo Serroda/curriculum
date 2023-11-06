@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@unocss/nuxt"],
+  ssr: false,
   css: [
     "assets/css/main.css"
   ],

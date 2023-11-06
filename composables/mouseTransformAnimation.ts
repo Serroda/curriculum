@@ -1,26 +1,32 @@
 export const useMouseTransformAnimation = () => {
 
-    const container: Ref<HTMLDivElement | null> = ref(null);
-    const inner: Ref<HTMLDivElement | null> = ref(null);
-    const counter = ref(5);
+    let container: HTMLDivElement | null = null;
+    let inner: HTMLDivElement | null = null;
+    let counter = 5;
 
-    const mouse = reactive({
+    const mouse = {
         x: 0,
         y: 0,
         originX: 0,
         originY: 0
-    })
+    }
 
     function init(_container: HTMLDivElement, _inner: HTMLDivElement) {
-        container.value = _container;
-        inner.value = _inner;
+        container = _container;
+        inner = _inner;
         setOrigin();
+        setTransition();
     }
 
     function setOrigin() {
-        if (!container.value) return;
-        mouse.originX = container.value.offsetLeft + Math.floor(container.value.offsetWidth / 2)
-        mouse.originY = container.value.offsetTop + Math.floor(container.value.offsetHeight / 2)
+        if (!container) return;
+        mouse.originX = container.offsetLeft + Math.floor(container.offsetWidth / 2)
+        mouse.originY = container.offsetTop + Math.floor(container.offsetHeight / 2)
+    }
+
+    function setTransition() {
+        if (!inner) return;
+        inner.style.transition = "transform .4s"
     }
 
     function updatePostion(event: MouseEvent) {
@@ -29,37 +35,39 @@ export const useMouseTransformAnimation = () => {
     }
 
     function setRotation() {
-        if (!inner.value) return;
-        const valueX = (mouse.y / inner.value.offsetHeight / 2).toFixed(2);
-        const valueY = (mouse.x / inner.value.offsetWidth / 2).toFixed(2);
-        inner.value.style.transform = "rotateX(" + valueX + "deg) rotateY(" + valueY + "deg)";
+        if (!inner) return;
+        const valueX = (mouse.y / inner.offsetHeight / 2).toFixed(2);
+        const valueY = (mouse.x / inner.offsetWidth / 2).toFixed(2);
+        inner.style.transform = "rotateX(" + valueX + "deg) rotateY(" + valueY + "deg)";
     }
 
-    function removeRotation() {
-        if (!inner.value) return;
-        inner.value.style.transform = "";
-    }
-
+    
     function updateAnimation(event: MouseEvent) {
-        if (counter.value !== 5) {
-            counter.value++;
+        if (counter !== 5) {
+            counter++;
             return;
         }
         updatePostion(event);
         setRotation()
-        counter.value = 0;
+        counter = 0;
+    }
+
+    function removeRotation() {
+        if (!inner) return;
+        inner.style.transform = "";
+        counter = 5;
     }
 
     function setTriggers() {
-        if (!inner.value) return;
-        inner.value.onmousemove = updateAnimation;
-        inner.value.onmouseleave = removeRotation;
+        if (!inner) return;
+        inner.onmousemove = updateAnimation;
+        inner.onmouseleave = removeRotation;
     }
 
     function removeTriggers() {
-        if (!inner.value) return;
-        inner.value.onmousemove = null;
-        inner.value.onmouseleave = null;
+        if (!inner) return;
+        inner.onmousemove = null;
+        inner.onmouseleave = null;
     }
 
     return {
