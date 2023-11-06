@@ -4,7 +4,7 @@
             <div class="gradient gray top--40px right--50px"></div>
             <div class="gradient dark left--80px top-50px"></div>
 
-            <Box :corners="2" :padding="50">
+            <Box :corners="2">
                 <template #content>
                     <img class="m-50px" src="../assets/images/me.jpg" height="356" width="267">
                 </template>
