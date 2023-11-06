@@ -1,6 +1,6 @@
 <template>
   <div class="h-100% w-100% flex flex-col items-center">
-    <div class="flex">
+    <div class="flex mt-325px gap-120px max-w-1100px">
       <div>
         <h2>CURRICULUM VITAE</h2>
         <h1>JESÚS CÁRCELES CLEMENTE</h1>
@@ -10,6 +10,7 @@
       </div>
       <div>
         <ProfilePicture />
+        <ColorButton />
       </div>
     </div>
 
