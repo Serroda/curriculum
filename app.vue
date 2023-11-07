@@ -1,5 +1,6 @@
 <template>
   <div class="h-100% w-100% flex flex-col items-center">
+
     <div class="flex mt-325px gap-120px max-w-1100px">
       <div>
         <h2>CURRICULUM VITAE</h2>
@@ -13,6 +14,11 @@
         <ColorButton />
       </div>
     </div>
+
+    <div class="flex w-100% max-w-1100px mt-80px">
+      <Divider text="DESCRIPCIÓN"/>
+    </div>
+
 
   </div>
 </template>
