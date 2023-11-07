@@ -43,6 +43,7 @@
   --color-9: 0 0% var(--light-9);
   --color-10: 0 0% var(--light-10);
   --color-10: 0 0% var(--light-11);
+  
   font-family: ChakraPetch;
 }
 
@@ -97,7 +98,6 @@ label{
 .dark-color {
   color: hsl(var(--color-8));
 }
-
 .gradient{
   width: 400px;
   height: 400px;

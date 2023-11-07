@@ -5,8 +5,8 @@
         <h2>CURRICULUM VITAE</h2>
         <h1>JESÚS CÁRCELES CLEMENTE</h1>
         <p>Full-stack developer</p>
-        <h2 class="dark-color mb-5px">01010110 01110101 01100101</h2>
-        <h2 class="dark-color mt-5px">00101110 01001110 01000101 01010100</h2>
+        <h2 class="dark-color mb-5px">{{ animationStringVue.stringAnimated.value }}</h2>
+        <h2 class="dark-color mt-5px">{{ animationStringNet.stringAnimated.value }}</h2>
       </div>
       <div>
         <ProfilePicture />
@@ -18,6 +18,31 @@
 </template>
 
 <script lang="ts" setup>
+const intersectionObserver = useIntersectionObserver();
+const animationStringVue = useStringAnimation()
+const animationStringNet = useStringAnimation()
+
+animationStringVue.init("01010110 01110101 01100101", 25, 70)
+animationStringNet.init("00101110 01001110 01000101 01010100", 35, 70)
+
+useSeoMeta({
+  title: 'Jesús Cárceles',
+  description: 'Hola, soy desarrollador de aplicaciones web',
+  ogTitle: 'Jesús Cárceles',
+  ogDescription: 'Hola, soy desarrollador de aplicaciones web',
+  ogImage: 'https://serroda.github.io/curriculum/me.jpg',
+  ogUrl: 'https://serroda.github.io/curriculum/',
+  twitterTitle: 'Jesús Cárceles',
+  twitterDescription: 'Hola, soy desarrollador de aplicaciones web',
+  twitterImage: 'https://serroda.github.io/curriculum/me.jpg',
+  twitterCard: 'summary'
+})
+
+useHead({
+  htmlAttrs: {
+    lang: 'es'
+  }
+})
 
 enum linkAddress {
   github = 'https://github.com/Serroda/',
@@ -89,9 +114,9 @@ function openLink(link: linkAddress) {
   window.open(link, "_blank")
 }
 
-const intersectionObserver = useIntersectionObserver();
-
 onMounted(() => {
   intersectionObserver.setObserver("observing")
+  animationStringNet.animate()
+  animationStringVue.animate()
 })
 </script>
