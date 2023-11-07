@@ -8,7 +8,8 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     public: {
-      'intersectionObserverThreshold': process.env.INTERSECTION_OBSERVER_THRESHOLD
+      'intersectionObserverThreshold': process.env.INTERSECTION_OBSERVER_THRESHOLD,
+      'defaultColorInput': process.env.DEFAULT_COLOR_INPUT
     }
   },
   app: {

@@ -29,9 +29,14 @@ export const useMouseTransformAnimation = () => {
         inner.style.transition = "transform .4s"
     }
 
-    function updatePostion(event: MouseEvent) {
-        mouse.x = event.x - mouse.originX
-        mouse.y = (event.y - mouse.originY) * -1
+    function updatePostion(event: MouseEvent | TouchEvent) {
+        if (event instanceof MouseEvent) {
+            mouse.x = event.x - mouse.originX
+            mouse.y = (event.y - mouse.originY) * -1
+        } else {
+            mouse.x = event.touches[0].clientX - mouse.originX
+            mouse.y = (event.touches[0].clientY - mouse.originY) * -1
+        }
     }
 
     function setRotation() {
@@ -41,8 +46,8 @@ export const useMouseTransformAnimation = () => {
         inner.style.transform = "rotateX(" + valueX + "deg) rotateY(" + valueY + "deg)";
     }
 
-    
-    function updateAnimation(event: MouseEvent) {
+
+    function updateAnimation(event: MouseEvent | TouchEvent) {
         if (counter !== 5) {
             counter++;
             return;
@@ -61,13 +66,21 @@ export const useMouseTransformAnimation = () => {
     function setTriggers() {
         if (!inner) return;
         inner.onmousemove = updateAnimation;
+        inner.ontouchmove = updateAnimation;
         inner.onmouseleave = removeRotation;
+        inner.ontouchend = removeRotation;
+        window.onresize = () => {
+            setOrigin();
+        }
     }
 
     function removeTriggers() {
         if (!inner) return;
         inner.onmousemove = null;
+        inner.ontouchmove = null;
         inner.onmouseleave = null;
+        inner.ontouchend = null;
+        window.onresize = null;
     }
 
     return {

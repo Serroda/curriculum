@@ -22,19 +22,19 @@ const intersectionObserver = useIntersectionObserver();
 const animationStringVue = useStringAnimation()
 const animationStringNet = useStringAnimation()
 
-animationStringVue.init("01010110 01110101 01100101", 25, 70)
-animationStringNet.init("00101110 01001110 01000101 01010100", 35, 70)
+animationStringVue.init("01010110 01110101 01100101", 40, 50)
+animationStringNet.init("00101110 01001110 01000101 01010100", 65, 50)
 
 useSeoMeta({
   title: 'Jesús Cárceles',
   description: 'Hola, soy desarrollador de aplicaciones web',
   ogTitle: 'Jesús Cárceles',
   ogDescription: 'Hola, soy desarrollador de aplicaciones web',
-  ogImage: 'https://serroda.github.io/curriculum/me.jpg',
+  ogImage: 'https://serroda.github.io/curriculum/logo512x512.png',
   ogUrl: 'https://serroda.github.io/curriculum/',
   twitterTitle: 'Jesús Cárceles',
   twitterDescription: 'Hola, soy desarrollador de aplicaciones web',
-  twitterImage: 'https://serroda.github.io/curriculum/me.jpg',
+  twitterImage: 'https://serroda.github.io/curriculum/logo512x512.png',
   twitterCard: 'summary'
 })
 

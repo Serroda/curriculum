@@ -1,7 +1,7 @@
 export const useStringAnimation = () => {
     const stringAnimated = ref("");
 
-    const options = "0123456789ABCDEF"
+    const options = ["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"]
     let lastResult = "";
     let iterations = 0;
     let delay = 0;
@@ -15,7 +15,7 @@ export const useStringAnimation = () => {
 
     function getRandomChar() {
         const random = Math.floor(Math.random() * (options.length - 1))
-        return options.split("")[random]
+        return options[random]
     }
 
     function addRandomString() {
