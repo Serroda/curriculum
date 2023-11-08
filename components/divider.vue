@@ -61,7 +61,7 @@ defineProps<{
 }
 
 .divider.visible {
-    width: 100%;
+    width:100%;
     opacity: 1;
     transition: width 1s, opacity .4s;
 }

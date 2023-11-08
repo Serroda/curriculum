@@ -1,5 +1,5 @@
 <template>
-    <div class="tech-grid flex flex-wrap gap-94px observing relative w-100%">
+    <div class="tech-grid flex flex-wrap observing relative w-100%">
        
         <Box :corners="4" animation v-for="tech in technologies" @click="emit('clickItem', tech.link)" class="cursor-pointer">
             <template #content>
@@ -25,6 +25,7 @@ const emit = defineEmits<{
 .tech-grid {
     opacity: 0;
     padding-top: 50px;
+    gap: 94px;
 }
 
 .tech-grid.visible {

@@ -1,7 +1,7 @@
 <template>
   <div class="h-100% w-100% flex flex-col items-center">
-    <div class="flex mt-300px gap-120px max-w-1100px">
-      <div>
+    <div class="flex init-margin max-w-1100px  hero-container flex-wrap">
+      <div class="hero-text">
         <h2>CURRICULUM VITAE</h2>
         <h1>JESÚS CÁRCELES CLEMENTE</h1>
         <p>Full-stack developer</p>
@@ -15,10 +15,10 @@
     </div>
 
     <div class="flex w-100% max-w-1100px mt-80px">
-      <Divider text="DESCRIPCIÓN" />
+      <Divider class="media-screen" text="DESCRIPCIÓN" />
     </div>
 
-    <div class="w-100% flex mt-80px">
+    <div class="w-100% flex flex-wrap mt-80px">
       <Bubbles />
       <div class="description-container">
         <div class="flex justify-between items-end w-100%">
@@ -40,7 +40,7 @@
       </div>
     </div>
 
-    <div class="w-100% max-w-1100px mt-80px">
+    <div class="max-w-1100px mt-80px ml-60px mr-60px">
       <h3 class="mb-40px">TECNOLOGÍAS CON LAS QUE TRABAJO</h3>
       <TechGrid :technologies="technologies" @clickItem="openLink" />
     </div>
@@ -53,16 +53,14 @@
         <h2 class="invert-color ml-16px m-0">EXPERIENCIA</h2>
       </div>
 
-      <div class="w-100% max-w-1100px mb-100px ">
+      <div class="max-w-1100px mb-100px ml-60px mr-60px">
         <ExpGrid />
       </div>
     </section>
 
-    <div class="w-100% max-w-1100px mt-40px">
+    <footer class="max-w-1100px mt-40px ml-60px mr-60px">
       <h3 class="mb-40px">CONTACTO Y LINKS</h3>
-      <div class="flex justify-between items-start mb-80px">
-
-
+      <div class="flex justify-between items-start mb-80px flex-wrap gap-26px">
         <div class="flex gap-26px ">
           <Box animation class="cursor-pointer" @click="openLink(runtimeConfig.public.github)">
             <template #content>
@@ -84,10 +82,8 @@
         <div>
           <Matrix :dots="60" :columns="15" />
         </div>
-
       </div>
-
-    </div>
+    </footer>
 
   </div>
 </template>

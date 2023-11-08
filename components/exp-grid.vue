@@ -1,26 +1,27 @@
 <template>
     <div class="exp-grid w-100% observing">
-        <div class="flex items-center justify-between gap-40px">
+        
+        <div class="items-center grid-container w-100%">
             <Box :corners="4" class="invert-color">
                 <template #content>
-                    <div class="m-20px">
+                    <div class="p-10px pl-20px pr-20px">
                         <h3 class="invert-color">ESTUDIOS</h3>
                         <div class="flex gap-16px">
                             <Tag text="UCAM" />
                             <Tag text="2016-2018" />
                         </div>
-                        <p class="invert-color">Formación profesional superior de desarrollo de aplicaciones web</p>
+                        <p class="invert-color max-w-500px">Formación profesional superior de desarrollo de aplicaciones web</p>
                     </div>
                 </template>
             </Box>
-            <Box :corners="4" class="invert-color">
+            <Box :corners="4" class="invert-color ">
                 <template #content>
-                    <div class="m-20px">
+                    <div class="p-10px pl-20px pr-20px">
                         <h3 class="invert-color">CURSOS</h3>
                         <div class="flex gap-16px">
                             <Tag text="UDEMY" />
                         </div>
-                        <p class="invert-color">Cursos de diseño de interfaces, patrones de diseño y clean code</p>
+                        <p class="invert-color max-w-500px">Cursos de diseño de interfaces, patrones de diseño y clean code</p>
                     </div>
                 </template>
             </Box>

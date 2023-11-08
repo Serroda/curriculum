@@ -11,7 +11,7 @@
     position: relative;
     width: 50%;
     height: 650px;
-    left: -700px;
+    left: -300px;
 }
 
 .bubbles.visible {
@@ -29,19 +29,21 @@
 }
 
 .bubbles .gradient {
-    left: 270px;
+    right: 60px;
     top: 20px;
 }
 
 .bubble.b1 {
-    
     background: linear-gradient(231deg, hsl(var(--color-2)) -70.88%, transparent 80.23%);
     width: 500px;
     height: 500px;
+    right: 300px;
 }
 
 .bubble.b2 {
-    left: 250px;
+    max-width: 400px;
+    max-height: 400px;
+    right: 150px;
     top: 200px;
     backdrop-filter: blur(7.5px);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);

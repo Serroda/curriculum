@@ -107,6 +107,9 @@ section {
   background: hsl(var(--color-2));
 }
 
+footer {
+  width: calc(100% - 120px);
+}
 .dark-color {
   color: hsl(var(--color-8));
 }
@@ -135,5 +138,98 @@ section {
   width: calc((100% - 1100px) / 2);
 }
 
-.invert-color p {
+.hero-container {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.hero-text {
+  width: 460px;
+}
+
+.grid-container {
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.init-margin{
+  margin-top: 200px;
+}
+
+.size-profile{
+  height: 356px;
+  width: 267px;
+}
+
+@media screen and (max-width: 1250px) {
+  .exp-grid .grid-container .box {
+    width: 100%;
+  }
+  .section-title {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .hero-container {
+    width: calc(100% - 120px);
+    gap: 60px;
+    justify-content: center;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .divider.observing.visible.media-screen {
+    width: calc(100% - 120px);
+    margin: 0 60px;
+  }
+
+  .bubbles.observing.visible,
+  .description-container {
+    width: calc(100% - 120px);
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .init-margin{
+    margin-top: 50px;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  body .bubbles.observing {
+    left: -100px;
+    height: 450px;
+  }
+
+  body .bubbles.observing.visible {
+    left: 0px;
+  }
+  body .bubbles .gradient.dark {
+    right: -150px;
+  }
+  body .bubbles .bubble.b1 {
+    width: 300px;
+    height: 300px;
+    right: 50px;
+  }
+  body .bubbles .bubble.b2 {
+    max-width: 200px;
+    max-height: 200px;
+    right: 0px;
+  }
+ body .size-profile{
+    height: 273px;
+    width: auto;
+  }
+
+  body .tech-grid.visible{
+    gap: 26px;
+    justify-content: center;
+  }
+  
 }

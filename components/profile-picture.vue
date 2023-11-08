@@ -6,7 +6,7 @@
 
             <Box :corners="2">
                 <template #content>
-                    <img class="m-50px" src="../assets/images/me.jpg" height="356" width="267"/>
+                    <img class="m-50px size-profile" src="../assets/images/me.jpg" />
                 </template>
             </Box>
         </div>
