@@ -99,7 +99,16 @@ animationStringNet.init("00101110 01001110 01000101 01010100", 65, 50)
 useHead({
   htmlAttrs: {
     lang: 'es'
-  }
+  },
+  link: [{
+    rel: 'icon',
+    type: 'image/x-icon',
+    href: '/favicon.ico'
+  }],
+  meta: [{
+    "name": "theme-color",
+    "content": "#0D0D0D"
+  }]
 })
 
 useSeoMeta({

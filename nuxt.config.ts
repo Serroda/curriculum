@@ -8,12 +8,6 @@ export default defineNuxtConfig({
   ],
   app: {
     baseURL: "/curriculum/",
-    buildAssetsDir: "./",
-    head: {
-      meta: [{
-        "name": "theme-color",
-        "content": "#0D0D0D"
-      }]
-    }
+    buildAssetsDir: "./"
   }
 })
