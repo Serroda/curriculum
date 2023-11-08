@@ -2,12 +2,16 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@unocss/nuxt"],
+  ssr: false,
   css: [
     "assets/css/main.css"
   ],
   runtimeConfig: {
     public: {
-      'intersectionObserverThreshold': process.env.INTERSECTION_OBSERVER_THRESHOLD
+      'intersectionObserverThreshold': process.env.INTERSECTION_OBSERVER_THRESHOLD,
+      'defaultColorInput': process.env.DEFAULT_COLOR_INPUT,
+      'linkedin': process.env.LINKEDIN,
+      'github': process.env.GITHUB
     }
   },
   app: {
