@@ -62,7 +62,7 @@
       <h3 class="mb-40px">CONTACTO Y LINKS</h3>
       <div class="flex justify-between items-start mb-80px flex-wrap gap-26px">
         <div class="flex gap-26px ">
-          <Box animation class="cursor-pointer" @click="openLink(runtimeConfig.public.github)">
+          <Box animation class="cursor-pointer" @click="openLink(links.github)">
             <template #content>
               <div class="ml-20px mr-20px mt-10px mb-10px">
                 <label>GITHUB</label>
@@ -70,7 +70,7 @@
             </template>
           </Box>
 
-          <Box animation class="cursor-pointer" @click="openLink(runtimeConfig.public.linkedin)">
+          <Box animation class="cursor-pointer" @click="openLink(links.linkedin)">
             <template #content>
               <div class="ml-20px mr-20px mt-10px mb-10px">
                 <label>LINKEDIN</label>
@@ -89,7 +89,6 @@
 </template>
 
 <script lang="ts" setup>
-const runtimeConfig = useRuntimeConfig()
 const intersectionObserver = useIntersectionObserver();
 const animationStringVue = useStringAnimation()
 const animationStringNet = useStringAnimation()
@@ -115,6 +114,11 @@ useHead({
     lang: 'es'
   }
 })
+
+const links = {
+  github: 'https://github.com/Serroda/',
+  linkedin: 'https://es.linkedin.com/in/jes%C3%BAs-c%C3%A1rceles-119108234'
+}
 
 const interests = ["EXPERIENCIA DE USUARIO (UX)", "EXPERIENCIA DE DESARROLLADOR (DX)", "ANIMACIÓN", "DISEÑO", "CREACIÓN DE SERVICIOS"]
 
