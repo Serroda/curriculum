@@ -1,9 +1,7 @@
 export const useIntersectionObserver = () => {
 
-    const runtimeConfig = useRuntimeConfig()
-
     const apiOptions: IntersectionObserverInit = {
-        threshold: runtimeConfig.public.intersectionObserverThreshold ? parseFloat(runtimeConfig.public.intersectionObserverThreshold) : 0
+        threshold: 0
     }
 
     function setObserver(className: string) {

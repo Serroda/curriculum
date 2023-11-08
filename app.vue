@@ -96,28 +96,28 @@ const animationStringNet = useStringAnimation()
 animationStringVue.init("01010110 01110101 01100101", 40, 50)
 animationStringNet.init("00101110 01001110 01000101 01010100", 65, 50)
 
-useSeoMeta({
-  title: 'Jesús Cárceles',
-  description: 'Hola, soy desarrollador de aplicaciones web',
-  ogTitle: 'Jesús Cárceles',
-  ogDescription: 'Hola, soy desarrollador de aplicaciones web',
-  ogImage: 'https://serroda.github.io/curriculum/logo512x512.png',
-  ogUrl: 'https://serroda.github.io/curriculum/',
-  twitterTitle: 'Jesús Cárceles',
-  twitterDescription: 'Hola, soy desarrollador de aplicaciones web',
-  twitterImage: 'https://serroda.github.io/curriculum/logo512x512.png',
-  twitterCard: 'summary'
-})
-
 useHead({
   htmlAttrs: {
     lang: 'es'
   }
 })
 
-const links = {
-  github: 'https://github.com/Serroda/',
-  linkedin: 'https://es.linkedin.com/in/jes%C3%BAs-c%C3%A1rceles-119108234'
+useSeoMeta({
+  title: 'Jesús Cárceles',
+  description: 'Hola, soy desarrollador de aplicaciones web',
+  ogTitle: 'Jesús Cárceles',
+  ogDescription: 'Hola, soy desarrollador de aplicaciones web',
+  ogImage: 'https://serroda.github.io/curriculum/images/logo512x512.png',
+  ogUrl: 'https://serroda.github.io/curriculum/',
+  twitterTitle: 'Jesús Cárceles',
+  twitterDescription: 'Hola, soy desarrollador de aplicaciones web',
+  twitterImage: 'https://serroda.github.io/curriculum/images/logo512x512.png',
+  twitterCard: 'summary'
+})
+
+enum links {
+  github = 'https://github.com/Serroda/',
+  linkedin = 'https://es.linkedin.com/in/jes%C3%BAs-c%C3%A1rceles-119108234'
 }
 
 const interests = ["EXPERIENCIA DE USUARIO (UX)", "EXPERIENCIA DE DESARROLLADOR (DX)", "ANIMACIÓN", "DISEÑO", "CREACIÓN DE SERVICIOS"]

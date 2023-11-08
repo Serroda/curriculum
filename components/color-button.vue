@@ -26,9 +26,8 @@
 </style>
 
 <script lang="ts" setup>
-const runtimeConfig = useRuntimeConfig()
 const colorTheme = useColorTheme()
-const colorSelected = ref(runtimeConfig.public.defaultColorInput);
+const colorSelected = ref("#D9D9D9");
 const colorInput: Ref<HTMLInputElement | null> = ref(null)
 
 onMounted(() => {

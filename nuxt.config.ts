@@ -6,19 +6,13 @@ export default defineNuxtConfig({
   css: [
     "assets/css/main.css"
   ],
-  runtimeConfig: {
-    public: {
-      'intersectionObserverThreshold': process.env.INTERSECTION_OBSERVER_THRESHOLD,
-      'defaultColorInput': process.env.DEFAULT_COLOR_INPUT
-    }
-  },
   app: {
     baseURL: "/curriculum/",
     buildAssetsDir: "./",
     head: {
       meta: [{
         "name": "theme-color",
-        "content": process.env.THEME_COLOR
+        "content": "#0D0D0D"
       }]
     }
   }
