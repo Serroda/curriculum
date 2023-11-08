@@ -1,6 +1,6 @@
 export const useColorTheme = () => {
 
-    const colorsThemed = [1, 2, 3, 4 ,5, 8, 9]
+    const colorsThemed = [1, 2, 3, 4 ,5, 7, 8, 9]
 
     function hexToHsl(hex: string) {
         const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);

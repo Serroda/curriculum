@@ -1,7 +1,6 @@
 <template>
   <div class="h-100% w-100% flex flex-col items-center">
-
-    <div class="flex mt-325px gap-120px max-w-1100px">
+    <div class="flex mt-300px gap-120px max-w-1100px">
       <div>
         <h2>CURRICULUM VITAE</h2>
         <h1>JESÚS CÁRCELES CLEMENTE</h1>
@@ -16,14 +15,85 @@
     </div>
 
     <div class="flex w-100% max-w-1100px mt-80px">
-      <Divider text="DESCRIPCIÓN"/>
+      <Divider text="DESCRIPCIÓN" />
     </div>
 
+    <div class="w-100% flex mt-80px">
+      <Bubbles />
+      <div class="description-container">
+        <div class="flex justify-between items-end w-100%">
+          <h3 class="mb-0">HOLA</h3>
+          <Matrix :dots="24" :columns="6" />
+        </div>
+        <p>Soy desarrollador de aplicaciones web con 5 años de experiencia, me encanta ambos mundos tanto el Frontend como
+          el
+          Backend</p>
+        <h3 class="mt-40px">INTERESES</h3>
+        <div class="flex flex-wrap gap-10px">
+          <Tag v-for="interest in interests" :text="interest" />
+        </div>
+        <h3 class="mt-40px">IDIOMAS</h3>
+        <ul>
+          <li>Español nativo</li>
+          <li>Inglés: nivel básico de conversación y nivel intermedio en escritura y comprensión lectora</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="w-100% max-w-1100px mt-80px">
+      <h3 class="mb-40px">TECNOLOGÍAS CON LAS QUE TRABAJO</h3>
+      <TechGrid :technologies="technologies" @clickItem="openLink" />
+    </div>
+
+    <section class="w-100% mt-80px pt-100px flex flex-col items-center">
+      <div class="flex w-100% align-items mb-40px">
+        <div class="section-title mt-22px">
+          <Divider class="invert-color" />
+        </div>
+        <h2 class="invert-color ml-16px m-0">EXPERIENCIA</h2>
+      </div>
+
+      <div class="w-100% max-w-1100px mb-100px ">
+        <ExpGrid />
+      </div>
+    </section>
+
+    <div class="w-100% max-w-1100px mt-40px">
+      <h3 class="mb-40px">CONTACTO Y LINKS</h3>
+      <div class="flex justify-between items-start mb-80px">
+
+
+        <div class="flex gap-26px ">
+          <Box animation class="cursor-pointer" @click="openLink(runtimeConfig.public.github)">
+            <template #content>
+              <div class="ml-20px mr-20px mt-10px mb-10px">
+                <label>GITHUB</label>
+              </div>
+            </template>
+          </Box>
+
+          <Box animation class="cursor-pointer" @click="openLink(runtimeConfig.public.linkedin)">
+            <template #content>
+              <div class="ml-20px mr-20px mt-10px mb-10px">
+                <label>LINKEDIN</label>
+              </div>
+            </template>
+          </Box>
+        </div>
+
+        <div>
+          <Matrix :dots="60" :columns="15" />
+        </div>
+
+      </div>
+
+    </div>
 
   </div>
 </template>
 
 <script lang="ts" setup>
+const runtimeConfig = useRuntimeConfig()
 const intersectionObserver = useIntersectionObserver();
 const animationStringVue = useStringAnimation()
 const animationStringNet = useStringAnimation()
@@ -50,28 +120,25 @@ useHead({
   }
 })
 
-enum linkAddress {
-  github = 'https://github.com/Serroda/',
-  linkedin = 'https://es.linkedin.com/in/jes%C3%BAs-c%C3%A1rceles-119108234'
-}
+const interests = ["EXPERIENCIA DE USUARIO (UX)", "EXPERIENCIA DE DESARROLLADOR (DX)", "ANIMACIÓN", "DISEÑO", "CREACIÓN DE SERVICIOS"]
 
 const technologies = [{
-  name: "Vue",
+  name: "VUE",
   image: "vue.png",
   link: "https://vuejs.org/"
 },
 {
-  name: "Vite",
+  name: "VITE",
   image: "vite.png",
   link: "https://vitejs.dev/"
 },
 {
-  name: "Nuxt",
+  name: "NUXT",
   image: "nuxt.png",
   link: "https://nuxt.com/"
 },
 {
-  name: "JavaScript",
+  name: "JAVASCRIPT",
   image: "javascript.png",
   link: "https://developer.mozilla.org/es/docs/Web/JavaScript"
 },
@@ -81,7 +148,7 @@ const technologies = [{
   link: "https://developer.mozilla.org/es/docs/Web/CSS"
 },
 {
-  name: "Figma",
+  name: "FIGMA",
   image: "figma.png",
   link: "https://www.figma.com/"
 },
@@ -96,13 +163,13 @@ const technologies = [{
   link: "https://es.wikipedia.org/wiki/SQL"
 },
 {
-  name: "Capacitor",
+  name: "CAPACITOR",
   image: "capacitor.png",
   link: "https://capacitorjs.com/"
 },
 {
-  name: "Entity Framework",
-  image: "entity-framework.png",
+  name: "ENTITY FR.",
+  image: "entity.png",
   link: "https://learn.microsoft.com/en-us/ef/"
 },
 {
@@ -111,12 +178,13 @@ const technologies = [{
   link: "https://dotnet.microsoft.com/es-es/learn/dotnet/what-is-dotnet"
 },
 {
-  name: "TypeScript",
+  name: "TYPESCRIPT",
   image: "typescript.png",
   link: "https://www.typescriptlang.org/"
 }]
 
-function openLink(link: linkAddress) {
+
+function openLink(link: string) {
   window.open(link, "_blank")
 }
 

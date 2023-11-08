@@ -1,12 +1,12 @@
 <template>
     <div class="divider observing">
-        <label>{{ text }}</label>
+        <label v-if="text">{{ text }}</label>
     </div>
 </template>
 
 <script lang="ts" setup>
 defineProps<{
-    text: string
+    text?: string
 }>()
 </script>
 
@@ -17,6 +17,10 @@ defineProps<{
     height: 2px;
     background: hsl(var(--color-5));
     position: relative;
+}
+
+.divider.invert-color {
+    background: hsl(var(--color-6));
 }
 
 .divider label {
@@ -36,13 +40,21 @@ defineProps<{
     right: 0;
 }
 
-.divider::before {
+.divider.invert-color:after,
+.divider.invert-color::before {
+    border: 4px solid hsl(var(--color-8));
+}
+
+
+.divider::before,
+.divider.divider.invert-color::before {
     bottom: -1px;
     border-top: none;
     border-left: none;
 }
 
-.divider::after {
+.divider::after,
+.divider.invert-color:after {
     top: -1px;
     border-bottom: none;
     border-left: none;
