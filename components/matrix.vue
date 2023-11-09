@@ -25,11 +25,9 @@ defineProps<{
 }
 
 .dot:nth-child(odd){
-    background: hsl(var(--color-8));
     animation: blink .6s infinite alternate ease-out;
 }
 .dot:nth-child(even){
-    background: hsl(var(--color-9));
     animation: blink .6s infinite alternate-reverse ease-out;
 }
 
