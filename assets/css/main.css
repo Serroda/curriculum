@@ -19,8 +19,6 @@
   --light-7: 30%;
   --light-8: 20%;
   --light-9: 15%;
-  --light-10: 10%;
-  --light-11: 8%;
 
   --color-1: 0 0% var(--light-1);
   --color-2: 0 0% var(--light-2);
@@ -31,9 +29,7 @@
   --color-7: 0 0% var(--light-7);
   --color-8: 0 0% var(--light-8);
   --color-9: 0 0% var(--light-9);
-  --color-10: 0 0% var(--light-10);
-  --color-10: 0 0% var(--light-11);
-
+ 
   font-family: ChakraPetch;
 }
 
@@ -86,7 +82,6 @@ p.invert-color,
 ul.invert-color li {
   color: hsl(var(--color-7));
 }
-
 p,
 li {
   color: hsl(var(--color-4));
@@ -110,9 +105,12 @@ section {
 footer {
   width: calc(100% - 120px);
 }
-.dark-color {
+.digits {
   color: hsl(var(--color-8));
+  text-wrap: balance;
+  letter-spacing: -.5px;
 }
+
 .gradient {
   width: 400px;
   height: 400px;
@@ -144,13 +142,14 @@ footer {
 }
 
 .hero-text {
-  width: 460px;
+  width: 480px;
 }
 
-.grid-container {
+.exp-grid-top-container {
   gap: 20px;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .init-margin {
@@ -165,13 +164,18 @@ footer {
 
 @media screen and (max-width: 1150px) {
 
-  .exp-grid .grid-container .box {
+  .exp-grid .exp-grid-top-container .box {
     width: 100%;
   }
   .section-title {
     width: 30px;
   }
-  
+
+  body .tech-grid.visible {
+    gap: 26px;
+    justify-content: center;
+  }
+
   .hero-container {
     width: calc(100% - 60px);
     gap: 60px;
@@ -217,12 +221,10 @@ footer {
     right: 0px;
   }
   body .size-profile {
-    height: 273px;
+    height: 303px;
     width: auto;
   }
 
-  body .tech-grid.visible {
-    gap: 26px;
-    justify-content: center;
-  }
+ 
+
 }

@@ -1,7 +1,7 @@
 <template>
     <div class="exp-grid w-100% observing">
         
-        <div class="items-center grid-container w-100%">
+        <div class="items-center exp-grid-top-container w-100%">
             <Box :corners="4" class="invert-color">
                 <template #content>
                     <div class="p-10px pl-20px pr-20px">
@@ -14,7 +14,7 @@
                     </div>
                 </template>
             </Box>
-            <Box :corners="4" class="invert-color ">
+            <Box :corners="4" class="invert-color">
                 <template #content>
                     <div class="p-10px pl-20px pr-20px">
                         <h3 class="invert-color">CURSOS</h3>

@@ -1,13 +1,13 @@
 <template>
   <div class="h-100% w-100% flex flex-col items-center">
 
-    <div class="flex init-margin max-w-1100px hero-container flex-wrap">
+    <div class="flex init-margin max-w-1100px flex-wrap hero-container">
       <div class="hero-text">
         <h2>CURRICULUM VITAE</h2>
         <h1>JESÚS CÁRCELES CLEMENTE</h1>
         <p>Full-stack developer</p>
-        <h2 class="dark-color mb-5px">{{ animationStringVue.stringAnimated.value }}</h2>
-        <h2 class="dark-color mt-5px">{{ animationStringNet.stringAnimated.value }}</h2>
+        <h2 class="digits mb-5px">{{ animationStringVue.stringAnimated.value }}</h2>
+        <h2 class="digits mt-5px">{{ animationStringNet.stringAnimated.value }}</h2>
       </div>
       <div>
         <ProfilePicture />
@@ -95,7 +95,7 @@ const animationStringVue = useStringAnimation()
 const animationStringNet = useStringAnimation()
 
 animationStringVue.init("01010110 01110101 01100101", 40, 50)
-animationStringNet.init("00101110 01001110 01000101 01010100", 65, 50)
+animationStringNet.init("01001110 01000101 01010100", 65, 50)
 
 useHead({
   htmlAttrs: {
