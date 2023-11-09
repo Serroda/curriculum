@@ -1,6 +1,7 @@
 <template>
   <div class="h-100% w-100% flex flex-col items-center">
-    <div class="flex init-margin max-w-1100px  hero-container flex-wrap">
+
+    <div class="flex init-margin max-w-1100px hero-container flex-wrap">
       <div class="hero-text">
         <h2>CURRICULUM VITAE</h2>
         <h1>JESÚS CÁRCELES CLEMENTE</h1>
@@ -40,7 +41,7 @@
       </div>
     </div>
 
-    <div class="max-w-1100px mt-80px ml-60px mr-60px">
+    <div class="max-w-1100px mt-80px ml-30px mr-30px">
       <h3 class="mb-40px">TECNOLOGÍAS CON LAS QUE TRABAJO</h3>
       <TechGrid :technologies="technologies" @clickItem="openLink" />
     </div>
@@ -53,12 +54,12 @@
         <h2 class="invert-color ml-16px m-0">EXPERIENCIA</h2>
       </div>
 
-      <div class="max-w-1100px mb-100px ml-60px mr-60px">
+      <div class="max-w-1100px mb-100px ml-30px mr-30px">
         <ExpGrid />
       </div>
     </section>
 
-    <footer class="max-w-1100px mt-40px ml-60px mr-60px">
+    <footer class="max-w-1100px mt-40px ml-30px mr-30px">
       <h3 class="mb-40px">CONTACTO Y LINKS</h3>
       <div class="flex justify-between items-start mb-80px flex-wrap gap-26px">
         <div class="flex gap-26px ">
@@ -102,8 +103,7 @@ useHead({
   },
   link: [{
     rel: 'icon',
-    type: 'image/x-icon',
-    href: '/curriculum/favicon.ico'
+    href: '/curriculum/images/logo.svg'
   }],
   meta: [{
     "name": "theme-color",
@@ -116,11 +116,11 @@ useSeoMeta({
   description: 'Hola, soy desarrollador de aplicaciones web',
   ogTitle: 'Jesús Cárceles',
   ogDescription: 'Hola, soy desarrollador de aplicaciones web',
-  ogImage: 'https://serroda.github.io/curriculum/images/logo512x512.png',
+  ogImage: 'https://serroda.github.io/curriculum/images/logo.svg',
   ogUrl: 'https://serroda.github.io/curriculum/',
   twitterTitle: 'Jesús Cárceles',
   twitterDescription: 'Hola, soy desarrollador de aplicaciones web',
-  twitterImage: 'https://serroda.github.io/curriculum/images/logo512x512.png',
+  twitterImage: 'https://serroda.github.io/curriculum/images/logo.svg',
   twitterCard: 'summary'
 })
 

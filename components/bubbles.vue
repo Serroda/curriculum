@@ -11,12 +11,12 @@
     position: relative;
     width: 50%;
     height: 650px;
-    left: -300px;
+    transform: translateX(-300px);
 }
 
 .bubbles.visible {
-    transition: left 1s;
-    left: 0px;
+   transition: transform 1s;
+    transform: translateX(0px); 
 }
 
 .bubbles.visible .bubble.b2 {
@@ -41,10 +41,15 @@
 }
 
 .bubble.b2 {
+    transform: scale(0);
     max-width: 400px;
     max-height: 400px;
+    width: 400px;
+    height: 400px;
+
     right: 150px;
     top: 200px;
+    
     backdrop-filter: blur(7.5px);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     background: linear-gradient(231deg, hsl(var(--color-2)) -50%, transparent 101.27%);
@@ -52,12 +57,10 @@
 
 @keyframes grow {
     from {
-        width: 0px;
-        height: 0px;
+        transform: scale(0);
     }
     to {
-        width: 400px;
-        height: 400px;
+        transform: scale(1);
     }
 }
 </style>
