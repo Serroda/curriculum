@@ -132,7 +132,7 @@ enum links {
 const interests = ["EXPERIENCIA DE USUARIO (UX)", "EXPERIENCIA DE DESARROLLADOR (DX)", "ANIMACIÓN", "DISEÑO", "CREACIÓN DE SERVICIOS"]
 
 function createURL(img: string) {
-  return new URL('./images/' + img, import.meta.url).href
+  return new URL('../images/' + img, import.meta.url).href
 }
 
 const technologies = [{
@@ -200,8 +200,6 @@ const technologies = [{
 function openLink(link: string) {
   window.open(link, "_blank")
 }
-
-
 
 onMounted(() => {
   intersectionObserver.setObserver("observing")
