@@ -131,64 +131,68 @@ enum links {
 
 const interests = ["EXPERIENCIA DE USUARIO (UX)", "EXPERIENCIA DE DESARROLLADOR (DX)", "ANIMACIÓN", "DISEÑO", "CREACIÓN DE SERVICIOS"]
 
+function createURL(img: string) {
+  return new URL('./images/' + img, import.meta.url).href
+}
+
 const technologies = [{
   name: "VUE",
-  image: "vue.png",
+  image: createURL("vue.png"),
   link: "https://vuejs.org/"
 },
 {
   name: "VITE",
-  image: "vite.png",
+  image: createURL("vite.png"),
   link: "https://vitejs.dev/"
 },
 {
   name: "NUXT",
-  image: "nuxt.png",
+  image: createURL("nuxt.png"),
   link: "https://nuxt.com/"
 },
 {
   name: "JAVASCRIPT",
-  image: "javascript.png",
+  image: createURL("javascript.png"),
   link: "https://developer.mozilla.org/es/docs/Web/JavaScript"
 },
 {
   name: "CSS",
-  image: "css.png",
+  image: createURL("css.png"),
   link: "https://developer.mozilla.org/es/docs/Web/CSS"
 },
 {
   name: "FIGMA",
-  image: "figma.png",
+  image: createURL("figma.png"),
   link: "https://www.figma.com/"
 },
 {
   name: "C#",
-  image: "csharp.png",
+  image: createURL("csharp.png"),
   link: "https://learn.microsoft.com/es-es/dotnet/csharp/"
 },
 {
   name: "SQL",
-  image: "sql.png",
+  image: createURL("sql.png"),
   link: "https://es.wikipedia.org/wiki/SQL"
 },
 {
   name: "CAPACITOR",
-  image: "capacitor.png",
+  image: createURL("capacitor.png"),
   link: "https://capacitorjs.com/"
 },
 {
   name: "ENTITY FR.",
-  image: "entity.png",
+  image: createURL("entity.png"),
   link: "https://learn.microsoft.com/en-us/ef/"
 },
 {
   name: ".NET",
-  image: "net.png",
+  image: createURL("net.png"),
   link: "https://dotnet.microsoft.com/es-es/learn/dotnet/what-is-dotnet"
 },
 {
   name: "TYPESCRIPT",
-  image: "typescript.png",
+  image: createURL("typescript.png"),
   link: "https://www.typescriptlang.org/"
 }]
 
@@ -196,6 +200,8 @@ const technologies = [{
 function openLink(link: string) {
   window.open(link, "_blank")
 }
+
+
 
 onMounted(() => {
   intersectionObserver.setObserver("observing")
