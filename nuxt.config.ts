@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     "assets/css/main.css"
   ],
   app: {
-    baseURL: "/curriculum/",
+    baseURL: "/curriculum",
     buildAssetsDir: "./"
   }
 })

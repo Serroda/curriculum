@@ -3,7 +3,7 @@
         <Box :corners="4" animation v-for="tech in technologies" @click="emit('clickItem', tech.link)" class="cursor-pointer">
             <template #content>
                 <div class="m-40px w-120px h-211px mb-10px flex flex-col items-center">
-                    <img :src="'./images/' + tech.image" width="120" height="140">
+                    <img :src="'images/' + tech.image" width="120" height="140">
                     <Tag class="mt-20px z-2" :text="tech.name" />
                 </div>
             </template>
