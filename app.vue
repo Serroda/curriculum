@@ -26,7 +26,7 @@
           <h3 class="mb-0">HOLA</h3>
           <Matrix :dots="24" :columns="6" />
         </div>
-        <p>Soy desarrollador de aplicaciones web con 5 años de experiencia, me encanta ambos mundos tanto el Frontend como
+        <p>Soy desarrollador de aplicaciones web con 5 años de experiencia, me encantan ambos mundos tanto el Frontend como
           el
           Backend.</p>
         <h3 class="mt-40px">INTERESES</h3>
@@ -36,7 +36,7 @@
         <h3 class="mt-40px">IDIOMAS</h3>
         <ul>
           <li>Español nativo.</li>
-          <li>Inglés: nivel básico de conversación y nivel intermedio en escritura y comprensión lectora.</li>
+          <li>Inglés nivel intermedio.</li>
         </ul>
       </div>
     </div>

@@ -36,10 +36,10 @@
                         <Tag text="2018-2023" />
                     </div>
                     <ul class="invert-color">
-                        <li>He realizado diseño de interfaces de usuario y maquetación.</li>
-                        <li>He desarrollado servicios y paneles de datos (dashboard) para gestión de pólizas de seguros, generación de documentos legales y cálculos de primas.</li>
-                        <li>He creado aplicaciones para Android e iOS como portal de gestión para pólizas de seguros.</li>
-                        <li>He hecho plantillas, temas y componentes con Vue para aumentar la productividad.</li>
+                        <li>Diseño de interfaces de usuario y maquetación.</li>
+                        <li>Servicios y paneles de datos (dashboard) para gestión de pólizas de seguros, generación de documentos legales y cálculos de primas.</li>
+                        <li>Aplicaciones para Android e iOS como portal de gestión para pólizas de seguros.</li>
+                        <li>Plantillas, temas y componentes con Vue para aumentar la productividad.</li>
                         <li>Gestión bases de datos.</li>
                         <li>Despliegue en Windows Server.</li>
                         <li>Investigación de nuevas tecnologías para aumentar la productividad.</li>
