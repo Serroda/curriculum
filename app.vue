@@ -28,15 +28,15 @@
         </div>
         <p>Soy desarrollador de aplicaciones web con 5 años de experiencia, me encanta ambos mundos tanto el Frontend como
           el
-          Backend</p>
+          Backend.</p>
         <h3 class="mt-40px">INTERESES</h3>
         <div class="flex flex-wrap gap-10px">
           <Tag v-for="interest in interests" :text="interest" />
         </div>
         <h3 class="mt-40px">IDIOMAS</h3>
         <ul>
-          <li>Español nativo</li>
-          <li>Inglés: nivel básico de conversación y nivel intermedio en escritura y comprensión lectora</li>
+          <li>Español nativo.</li>
+          <li>Inglés: nivel básico de conversación y nivel intermedio en escritura y comprensión lectora.</li>
         </ul>
       </div>
     </div>
@@ -62,7 +62,8 @@
     <footer class="max-w-1100px mt-40px ml-30px mr-30px">
       <h3 class="mb-40px">CONTACTO Y LINKS</h3>
       <div class="flex justify-between items-start mb-80px flex-wrap gap-26px">
-        <div class="flex gap-26px ">
+        <div class="flex gap-26px">
+
           <Box animation class="cursor-pointer" @click="openLink(links.github)">
             <template #content>
               <div class="ml-20px mr-20px mt-10px mb-10px">

@@ -10,7 +10,7 @@
                             <Tag text="UCAM" />
                             <Tag text="2016-2018" />
                         </div>
-                        <p class="invert-color max-w-500px">Formación profesional superior de desarrollo de aplicaciones web</p>
+                        <p class="invert-color max-w-500px">Formación profesional superior de desarrollo de aplicaciones web.</p>
                     </div>
                 </template>
             </Box>
@@ -21,7 +21,7 @@
                         <div class="flex gap-16px">
                             <Tag text="UDEMY" />
                         </div>
-                        <p class="invert-color max-w-500px">Cursos de diseño de interfaces, patrones de diseño y clean code</p>
+                        <p class="invert-color max-w-500px">Cursos de diseño de interfaces, patrones de diseño y clean code.</p>
                     </div>
                 </template>
             </Box>
@@ -41,11 +41,11 @@
                         <li>He creado aplicaciones para Android e iOS como portal de gestión para pólizas de seguros.</li>
                         <li>He hecho plantillas, temas y componentes con Vue para aumentar la productividad.</li>
                         <li>Gestión bases de datos.</li>
-                        <li>Despliegue en Windows Server</li>
+                        <li>Despliegue en Windows Server.</li>
                         <li>Investigación de nuevas tecnologías para aumentar la productividad.</li>
                         <li>Mantenimiento y despliegue de CMS como WordPress.</li>
                         <li>Creación de animaciones con SVG.</li>
-                        <li>Atención al cliente</li>
+                        <li>Atención al cliente.</li>
                     </ul>
                 </div>
             </template>
