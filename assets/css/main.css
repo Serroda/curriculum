@@ -1,11 +1,13 @@
 @font-face {
   font-family: ChakraPetch;
-  src: url("../fonts/ChakraPetch-Medium.ttf");
+  src: url("@/public/fonts/ChakraPetch-Medium.ttf");
 }
+
 @font-face {
   font-family: SourceSansPro;
-  src: url("../fonts/SourceSansPro-Regular.ttf");
+  src: url("@/public/fonts/SourceSansPro-Regular.ttf");
 }
+
 :root {
   /* HSL */
   --background: 0 0% 5%;
@@ -29,7 +31,7 @@
   --color-7: 0 0% var(--light-7);
   --color-8: 0 0% var(--light-8);
   --color-9: 0 0% var(--light-9);
- 
+
   font-family: ChakraPetch;
 }
 
@@ -62,6 +64,7 @@ h1 {
   color: hsl(var(--color-1));
   font-size: 3rem;
 }
+
 h2 {
   color: hsl(var(--color-3));
   font-size: 2.25rem;
@@ -75,13 +78,16 @@ h3 {
   color: hsl(var(--color-3));
   font-size: 1.5rem;
 }
+
 h3.invert-color {
   color: hsl(var(--color-8));
 }
+
 p.invert-color,
 ul.invert-color li {
   color: hsl(var(--color-7));
 }
+
 p,
 li {
   color: hsl(var(--color-4));
@@ -105,10 +111,12 @@ section {
 footer {
   width: calc(100% - 120px);
 }
+
 .digits {
   color: hsl(var(--color-8));
   text-wrap: balance;
-  letter-spacing: -.5px;
+  letter-spacing: -.9px;
+  width: 100%;
 }
 
 .gradient {
@@ -167,6 +175,7 @@ footer {
   .exp-grid .exp-grid-top-container .box {
     width: 100%;
   }
+
   .section-title {
     width: 30px;
   }
@@ -220,6 +229,7 @@ footer {
     max-height: 200px;
     right: 0px;
   }
+
   body .size-profile {
     height: 303px;
     width: auto;

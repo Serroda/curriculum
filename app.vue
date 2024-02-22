@@ -26,7 +26,7 @@
           <h3 class="mb-0">HOLA</h3>
           <Matrix :dots="24" :columns="6" />
         </div>
-        <p>Soy desarrollador de aplicaciones web con 5 años de experiencia, me encantan ambos mundos tanto el Frontend como
+        <p>Soy desarrollador de aplicaciones web con experiencia, me encantan ambos mundos tanto el Frontend como
           el
           Backend.</p>
         <h3 class="mt-40px">INTERESES</h3>
@@ -130,7 +130,7 @@ enum links {
   linkedin = 'https://es.linkedin.com/in/jes%C3%BAs-c%C3%A1rceles-119108234'
 }
 
-const interests = ["EXPERIENCIA DE USUARIO (UX)", "EXPERIENCIA DE DESARROLLADOR (DX)", "ANIMACIÓN", "DISEÑO", "CREACIÓN DE SERVICIOS"]
+const interests = ["EXPERIENCIA DE USUARIO (UX)", "NUEVAS TECNOLOGÍAS", "EDICIÓN", "ANIMACIÓN", "DISEÑO", "CREACIÓN DE SERVICIOS"]
 
 function createURL(img: string) {
   return new URL('../images/' + img, import.meta.url).href
