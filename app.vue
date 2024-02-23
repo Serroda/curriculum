@@ -104,6 +104,7 @@ useHead({
   },
   link: [{
     rel: 'icon',
+    type: 'image/svg+xml',
     href: '/curriculum/images/logo.svg'
   }],
   meta: [{
