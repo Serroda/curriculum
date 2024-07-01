@@ -13,6 +13,6 @@
     "@nuxt/devtools": "latest",
     "@unocss/nuxt": "latest",
     "nuxt": "^3.11.2",
-    "vue": "^3.4.26"
+    "vue": "^3.4.31"
   }
 }
